@@ -1,3 +1,38 @@
-.container {
-    width:1024;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#background {
+    background-image: url("/Portfolio_Site/Assets/Images/brushed-alum.png");
+    background-color: #fcfcfc;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    min-height: 100%;
+    min-width: 1024;
+    height: auto;
+    width: 100%;
+}
+
+.my-navbar {
+    padding-top: 15px;
+}
+
+.my-brand-box {
+    margin: -15px 0px -25px 0px !important;
+    padding: 21px 40px 15px 40px !important;
+    background-color: #59aaa5; 
+    /* 89, 170, 165 */
+}
+
+.my-brand-text {
+    color:white; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
 }
