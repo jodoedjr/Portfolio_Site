@@ -7,17 +7,19 @@ hr {
     padding: 0;
 }
 
-#background {
-    background-image: url("/Portfolio_Site/Assets/Images/brushed-alum.png");
-    background-color: #fcfcfc;
-    position: fixed;
-    top: 80px;
-    left: 0px;
-    min-height: 100%;
-    min-width: 1024;
-    height: auto;
-    width: 100%;
+html, body {
+    height: 100%;
+    margin: 0;
 }
+
+
+.wrapper {
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -100px;
+} 
+
 
 .my-navbar {
     padding-top: 15px;
@@ -35,4 +37,63 @@ hr {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 30px;
+}
+
+
+#background {
+    background-image: url("/Portfolio_Site/Assets/Images/brushed-alum.png");
+    background-color: #fcfcfc;
+    /* position: fixed; */
+    position: relative;
+    top: -18px;
+    left: 0px;
+    min-height: 1024;
+    min-width: 100%;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.first-content-section{
+    padding-top: 30px;
+    padding-bottom: 125px;
+}
+
+.section-header{
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 20px;
+    margin-right: 0;
+    font-weight: bold;
+    color:#59aaa5;
+}
+
+.about-me-image{
+    width:200px;
+    height:150px;
+    margin-right:10px;
+}
+
+
+.my-grid-image{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.footer{
+    height: 100px;
+  }
+
+.footer-row-one{
+    height: 10px;
+    background-color:#59aaa5;
+}
+.footer-row-two{
+    height: 90px; 
+    padding-top: 15px; 
+    background-color: grey; 
+    color:lightgray;
 }
