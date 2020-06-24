@@ -1,5 +1,7 @@
 This portfolio webpage uses the bootstrap css framework to responsively resize webpage sections to fit small, medium, and large screens.
 Images below of the about, portfolio placeholder, and contact pages at various screen sizes.
+Link:
+https://jodoedjr.github.io/Portfolio_Site/
 
 
 
