@@ -3,7 +3,7 @@ Images below of the about, portfolio placeholder, and contact pages at various s
 Link:
 https://jodoedjr.github.io/Portfolio_Site/
 
-
+![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/aboutpagefullsize.PNG "Logo Title Text 1")
 
 
 
