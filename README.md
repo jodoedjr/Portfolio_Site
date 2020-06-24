@@ -3,7 +3,13 @@ Images below of the about, portfolio placeholder, and contact pages at various s
 Link:
 https://jodoedjr.github.io/Portfolio_Site/
 
-![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/aboutpagefullsize.PNG "Logo Title Text 1")
+![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/aboutpagefullsize.PNG "About me large")
+![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/aboutpagemid.PNG "About me mid")
+![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/aboutpagesmall.PNG "About me small")
+![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/portbig.PNG.PNG "Portfolio large")
+![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/portsmall.PNG.PNG "Portfolio small")
+![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/contactbig.PNG "Contact large")
+![alt text](https://github.com/jodoedjr/Portfolio_Site/blob/master/Finished_Product_Images/contactsmall.PNG "Contact small")
 
 
 
