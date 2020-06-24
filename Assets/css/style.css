@@ -22,7 +22,7 @@ html, body {
 
 
 .my-navbar {
-    padding-top: 15px;
+    padding-top: 15px;    
 }
 
 .my-brand-box {
@@ -43,13 +43,8 @@ html, body {
 #background {
     background-image: url("/Portfolio_Site/Assets/Images/brushed-alum.png");
     background-color: #fcfcfc;
-    /* position: fixed; */
-    position: relative;
-    top: -18px;
-    left: 0px;
     min-height: 1024;
     min-width: 100%;
-    height: auto;
     width: 100%;
     z-index: -1;
 }
@@ -57,18 +52,20 @@ html, body {
 
 .first-content-section{
     padding-top: 30px;
-    padding-bottom: 125px;
+    padding-bottom: 100px;
 }
 
 .section-header{
     display: block;
-    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
     margin-left: 20px;
     margin-right: 0;
-    font-weight: bold;
     color:#59aaa5;
+    
 }
 
 .about-me-image{
@@ -79,9 +76,20 @@ html, body {
 
 
 .my-grid-image{
-    padding-top:20px;
-    padding-bottom:20px;
+    padding: 20px 10px 20px 10px;
 }
+
+/* Centered text image text */
+.centered {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: #59aaa5;
+    padding: 10px 20px 10px 20px;
+        
+  }
 
 .footer{
     height: 100px;
@@ -97,3 +105,23 @@ html, body {
     background-color: grey; 
     color:lightgray;
 }
+
+@media (max-width: 769px) { 
+    .about-me-image{
+        width: 50%;
+        height: auto;
+    }
+
+    .my-grid-image{
+        padding-top:20px;
+        padding-bottom:10px;
+        width: 100%;
+    }
+ }
+
+ @media (max-width: 641px) { 
+     .about-me-image{
+         width: 100%;
+         height: auto;
+     }
+ }
