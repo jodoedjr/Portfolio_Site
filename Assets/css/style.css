@@ -2,7 +2,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #E27D60;
     margin: 1em 0;
     padding: 0;
 }
@@ -28,20 +28,23 @@ html, body {
 .my-brand-box {
     margin: -15px 0px -25px 0px !important;
     padding: 21px 40px 15px 40px !important;
-    background-color: #59aaa5; 
+    background-color: #E8A87C; 
     /* 89, 170, 165 */
 }
 
 .my-brand-text {
-    color:white; 
+    color: white; 
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 30px;
 }
 
+.my-nav-link {
+    color: #E8A87C !important;
+}
 
 #background {
-    background-image: url("/Portfolio_Site/Assets/Images/brushed-alum.png");
+    background-image: url("/Assets/Images/brushed-alum.png");
     background-color: #fcfcfc;
     min-height: 1024;
     min-width: 100%;
@@ -64,7 +67,8 @@ html, body {
     margin-bottom: 0.83em;
     margin-left: 20px;
     margin-right: 0;
-    color:#59aaa5;
+    color: #41B3A3;
+    /* color:#59aaa5; */
     
 }
 
@@ -79,6 +83,7 @@ html, body {
     padding: 20px 10px 20px 10px;
 }
 
+
 /* Centered text image text */
 .centered {
     position: absolute;
@@ -86,24 +91,24 @@ html, body {
     left: 45%;
     transform: translate(-50%, -50%);
     color: white;
-    background: #59aaa5;
+    background: #E8A87C;
     padding: 10px 20px 10px 20px;
         
-  }
+}
 
 .footer{
     height: 100px;
-  }
+}
 
 .footer-row-one{
     height: 10px;
-    background-color:#59aaa5;
+    background-color:#C38D9E;
 }
 .footer-row-two{
     height: 90px; 
     padding-top: 15px; 
-    background-color: grey; 
-    color:lightgray;
+    background-color: #E8A87C; 
+    color:black;
 }
 
 @media (max-width: 769px) { 
