@@ -26,7 +26,7 @@ html, body {
 }
 
 .my-brand-box {
-    margin: -15px 0px -25px 0px !important;
+    /* margin: -15px 0px -25px 0px !important; */
     padding: 21px 40px 15px 40px !important;
     background-color: #E8A87C; 
     /* 89, 170, 165 */
@@ -63,10 +63,10 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 30px;
-    margin-top: 0.83em;
+    /* margin-top: 0.83em;
     margin-bottom: 0.83em;
     margin-left: 20px;
-    margin-right: 0;
+    margin-right: 0; */
     color: #41B3A3;
     /* color:#59aaa5; */
     
