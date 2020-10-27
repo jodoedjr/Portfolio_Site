@@ -1,8 +1,10 @@
 import React from "react";
 
 const Home = () => {
-    return(
-        <h1>THIS IS HOME!</h1>
+    return (
+        <div>
+            <h1>THIS IS HOME!</h1>
+        </div>
     )
 }
 
