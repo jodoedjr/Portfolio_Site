@@ -1,17 +1,17 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {github} from 
+import { FaGithub } from 'react-icons/fa';
 
 
 const Footer = (props) => {
     return (
         <footer className="bg-dark">
+            
                 <ul className="list-unstyled list-inline text-center">
                     <li className="list-inline-item">
                         <a className="btn-floating btn-fb mx-1">
-                            {/* <i className="fab fa-facebook-f"> </i> */}
-                            <FontAwesomeIcon icon={["fab", "github"]} />
+                        <FaGithub style={{color:"white",height:"100px",width:"100px"}}></FaGithub>
                         </a>
                     </li>
                     <li className="list-inline-item">
