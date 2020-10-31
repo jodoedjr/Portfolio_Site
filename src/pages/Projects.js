@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, CardColumns, Card } from "react-bootstrap";
-import { RightCard, LeftCard, BackgroundCard } from "../components/MyCards/";
+// import { RightCard, LeftCard, BackgroundCard } from "../components/MyCards/";
 import BudgetIMG from "../projects/budget-app-screenshot.png";
 import CanIEatItIMG from "../projects/Can-I-Eat-It-Screenshot.png";
 import EmployeeDirectoryIMG from "../projects/Employee-Directory-React.png";
@@ -71,24 +71,24 @@ const Projects = () => {
       <CardColumns>
 
 
-        <Card bg="primary" text="white" className="text-center p-3">
+        <Card bg="success" text="white" className="text-center p-3">
           <blockquote className="blockquote mb-0 card-body">
             <p>
               Take a look at some of the things I've worked on!
             </p>
-            <footer className="blockquote-footer">
+            {/* <footer className="blockquote-footer">
               <small className="text-muted">
                 <i>Please</i>
               </small>
-            </footer>
+            </footer> */}
           </blockquote>
 
         </Card>
         {currentProjects.map((proj, index) =>
           <Card key={index}>
-            <Card.Img src={proj.image} />
+            <a href={proj.deployedLink}><Card.Img src={proj.image} /></a>
             <Card.Body>
-              <Card.Title>{proj.name}</Card.Title>
+              <a href={proj.githubLink}><Card.Title>{proj.name}</Card.Title></a>
               <Card.Text>{proj.description}</Card.Text>
             </Card.Body>
           </Card>

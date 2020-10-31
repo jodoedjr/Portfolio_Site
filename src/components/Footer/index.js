@@ -1,17 +1,21 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Container, Navbar } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import Mailto from "../Mailto";
 
 
 const Footer = (props) => {
     return (
-        <footer className="bg-dark">
-            <FaGithub />
-            <FaLinkedin />
-            <div className="footer-copyright text-center py-3">© 2020 Copyright John Edwards
-            </div>
-        </footer>
+        <div className="fixed-bottom">
+            <Navbar className="bg-dark">
+                <Container>
+                    <a href="https://github.com/jodoedjr"><FaGithub />My GitHub!</a>
+                    <a href="https://www.linkedin.com/in/john-edwards-15b638bb/"><FaLinkedin />LinkedIn</a>
+                    <Mailto email="jdedwards6789@gmail.com" subject="John Edwards - Full Stack Developer" body="Hi John, My name is...">jdedwards6789@gmail.com</Mailto>
+                    Copyright 2020 © John Edwards
+                </Container>
+            </Navbar>
+        </div>
     )
 }
 
