@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NoMatch from "./pages/NoMatch";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/contact" component={Contact} />
         <Route component={NoMatch} />
       </Switch>
+      <Footer/>
     </BrowserRouter>
   );
 }

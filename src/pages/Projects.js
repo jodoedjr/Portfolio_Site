@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Card, CardColumns } from "react-bootstrap";
+import { Container, Row, Col, CardColumns, Card } from "react-bootstrap";
+import { RightCard, LeftCard, BackgroundCard } from "../components/MyCards/";
 import BudgetIMG from "../projects/budget-app-screenshot.png";
 import CanIEatItIMG from "../projects/Can-I-Eat-It-Screenshot.png";
 import EmployeeDirectoryIMG from "../projects/Employee-Directory-React.png";
@@ -11,18 +12,11 @@ import WorkoutTrackerIMG from "../projects/workout_tracker_stats_dashboard.png";
 //maybe there should be a github scrapper to grab repo name, deployements, and descriptions based off provided github url
 let currentProjects = [
   {
-    name: "SpaceLY",
+    name: "SpaceLY 🌟",
     image: SpaceLYIMG,//"public/projects/spaceLY.png",//path.join(__dirname, "..", "..", "public", "projects", "spaceLY.png"),
     githubLink: "https://github.com/jodoedjr/SpaceLY",
     deployedLink: "https://nameless-reaches-15845.herokuapp.com/",
     description: "SpaceLY is a sever app/localized night sky visualizer, with Point-of-interest database functionality built on VirtualSky."
-  },
-  {
-    name: "Can I Eat It?",
-    image: CanIEatItIMG,
-    githubLink: "https://github.com/jodoedjr/Food-Allergy-App",
-    deployedLink: "https://jodoedjr.github.io/Food-Allergy-App/",
-    description: "A kid-friendly web application that allows kids to check if a food item is safe for their allergies before consumption and suggests alternatives if not."
   },
   {
     name: "Employee Directory (React)",
@@ -31,6 +25,14 @@ let currentProjects = [
     deployedLink: "https://jodoedjr.github.io/Employee-Directory-React/",
     description: "This demo app uses React Hooks to populate, filter, order, and rerender a sample employee directory (Data provided by randomuser.me/api)"
   },
+  {
+    name: "Can I Eat It? 🌟",
+    image: CanIEatItIMG,
+    githubLink: "https://github.com/jodoedjr/Food-Allergy-App",
+    deployedLink: "https://jodoedjr.github.io/Food-Allergy-App/",
+    description: "A kid-friendly web application that allows kids to check if a food item is safe for their allergies before consumption and suggests alternatives if not."
+  },
+
   {
     name: "Online-Offline Budget Tracker",
     image: BudgetIMG,
@@ -50,11 +52,11 @@ let currentProjects = [
     image: KeyboardKeyboardIMG,
     githubLink: "https://github.com/jodoedjr/VirtualPiano",
     deployedLink: "https://jodoedjr.github.io/VirtualPiano/",
-    description: "This very simple app implments a very basic 1-octave keyboard-controlled keyboard"
+    description: "This very simple app implements a very basic 1-octave keyboard-controlled keyboard"
   }
 ]
 
-//shuffleArray(currentProjects);
+// shuffleArray(currentProjects);
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -68,6 +70,7 @@ const Projects = () => {
     <Container>
       <CardColumns>
 
+
         <Card bg="primary" text="white" className="text-center p-3">
           <blockquote className="blockquote mb-0 card-body">
             <p>
@@ -79,17 +82,17 @@ const Projects = () => {
               </small>
             </footer>
           </blockquote>
+
         </Card>
-        {currentProjects.map((proj, index) => 
+        {currentProjects.map((proj, index) =>
           <Card key={index}>
-            <Card.Img variant="top" src={proj.image} />
+            <Card.Img src={proj.image} />
             <Card.Body>
               <Card.Title>{proj.name}</Card.Title>
               <Card.Text>{proj.description}</Card.Text>
             </Card.Body>
           </Card>
         )}
-
       </CardColumns>
     </Container>
   )
